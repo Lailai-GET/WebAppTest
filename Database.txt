@@ -1,0 +1,23 @@
+﻿USE [LailaiTest]
+GO
+/****** Object:  Table [dbo].[TestDb]    Script Date: 25.05.2023 14:13:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TestDb](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Name] [nvarchar](max) NULL,
+	[Description] [nvarchar](max) NULL,
+ CONSTRAINT [PK_TestDb] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+INSERT [dbo].[TestDb] ([Id], [Name], [Description]) VALUES (N'46ddac8b-b36c-45de-af22-0ef9034f6fe8', N'Fader Jacob', N'Schrödingers søvn')
+GO
+INSERT [dbo].[TestDb] ([Id], [Name], [Description]) VALUES (N'7c3c6211-f0fd-4000-b7db-4fb5472af081', N'Lykke Liten', N'Ankommet verden')
+GO
+INSERT [dbo].[TestDb] ([Id], [Name], [Description]) VALUES (N'72a3732a-f632-4c3b-ad7e-6c10ad5f3422', N'Per Spelmann', N'Kvegbytter og musikant')
+GO
